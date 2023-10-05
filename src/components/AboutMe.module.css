@@ -1,0 +1,104 @@
+.aboutMe {
+  display: flex;
+  min-height: 42rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ text-align: justify;
+  background-image: url('../BackgroundImages/AboutMe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-right: 25rem;
+}
+ 
+.aboutMeHeading {
+  color: #74a3e0;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: cursive;
+  text-shadow: 0 0 5px #74a3e0, 0 0 10px #0f3464, 0 0 15px #0d6c9c, 0 0 20px #194d92, 0 0 25px #d42ebe;
+}
+
+.aboutMeIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10rem;
+  font-size: 1.8rem;
+  font-family:"Cambria";
+  color: #aec0d5;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #74a3e0, 0 0 10px #0f3464, 0 0 15px #0d6c9c, 0 0 20px #194d92, 0 0 25px #d42ebe;
+} 
+
+
+.digitalProduct {
+  animation: digitalColors 3s infinite;
+  font-size: 1.9rem;
+  text-shadow: 0 0 5px #193251, 0 0 10px #0f3464, 0 0 15px #0d6c9c, 0 0 20px #194d92, 0 0 25px #d42ebe;
+}
+
+@keyframes digitalColors {
+  0% {color: rgb(92, 136, 216);}
+  25% {color: rgb(95, 95, 197);}
+  50% {color: rgb(148, 95, 205);}
+  75% {color: rgb(138, 147, 203);}
+  100% {color: rgb(92, 136, 216);}
+}
+
+.ideas {
+  font-size: 1.9rem;
+  animation: ideaColors 3s infinite;
+  text-shadow: 0 0 5px #193251, 0 0 10px #0f3464, 0 0 15px #0d6c9c, 0 0 20px #194d92, 0 0 25px #d42ebe;
+}
+
+@keyframes ideaColors {
+0% {color:  rgb(126, 167, 236);}
+50% {color:  rgb(110, 130, 241);}
+100% {color:  rgb(126, 167, 236);}
+}
+
+.clean {
+  color: rgb(113, 113, 230);
+  text-shadow: 0 0 5px #1d314a, 0 0 10px #0f3464, 0 0 15px #0d6c9c, 0 0 20px #194d92, 0 0 25px #d42ebe;
+
+}
+
+                                        /* MOBILE sTYLES */
+
+@media only screen and (max-width: 600px) {
+
+  .aboutMe {
+    min-height: 42rem;
+    padding: 0rem;
+
+    background-image: url('../BackgroundImages/AboutMeMobile.jpg');
+    background-image: url('../BackgroundImages/AboutMeMobile.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  .aboutMeHeading {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .aboutMeIntro {
+    margin: 0 0.5rem; 
+    font-size: 1.3rem; 
+    margin-bottom: 3rem;
+  }
+
+  .ideas {
+    font-size: 1.4rem;
+  }
+
+  .digitalProduct {
+    font-size: 1.4rem;
+  }
+  
+}

@@ -1,0 +1,125 @@
+.navList {
+    background-color: #1E293B;
+    display: flex;
+    padding: 0.9rem 0; 
+    justify-content: flex-end;
+    position: fixed;
+    height: 2.5rem;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    cursor: pointer;
+}
+
+.navList .regularNavbar {
+    display: flex;
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.navList .regularNavbar li {
+    margin: 0 0.5rem;   
+    padding: 0.25rem 0.2rem;
+}
+
+.navList .regularNavbar li a {
+    color:#1e3b1f ;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration:none;
+    padding: 0.1rem 0.2rem; 
+    border-radius: 0.4rem; 
+    background-color: #6f8cbb; 
+    transition: ease 0.1s;  
+}  
+
+.navList .regularNavbar li a:hover {
+    color: #8599B6;
+    background-color:#274068; 
+    cursor: pointer;
+}
+
+
+                                                   /* Hamburger styles */
+.hamburger {
+    display: none;  /* initially hidden */
+}
+
+
+
+
+                                                    /* MOBILE sTYLES */
+@media only screen and (max-width: 600px) {
+
+    .navList {
+        background-color: #041633;
+        display: flex;
+        padding: 0.2rem 0;  
+        justify-content: flex-end;
+        top: 0;
+        height: 3rem;
+        z-index: 1000;
+    }
+
+    .showMenu {
+        display: flex;  /* Show menu when the hamburger icon is clicked */
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+    }
+
+    .hamburger {
+        display:inline-flex;  /* Show hamburger icon on mobile */
+        align-self: center;
+        color: rgba(62, 85, 123, 0.5); 
+        font-size: 3rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .navList .regularNavbar {
+        display: none; 
+       
+    }
+
+    .navList .showMenu {
+        display: flex;
+        list-style:none;
+        margin-right: 0.2rem;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 10%;
+    }
+
+    .navList .showMenu li {
+        margin: 0 0rem;   
+        height: 3.4rem;
+        width: 14rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .navList .showMenu li a {
+        color:#1E293B ;
+        font-weight: bold;
+        font-size: 2.1rem;
+        text-decoration:none;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.2rem; 
+        background-color: rgba(60, 79, 109, 0.7);  
+        transition: ease 0.1s;  /* This adds a smooth transition effect when the background color changes */
+        width: 15rem;
+    }
+    
+    .navList .showMenu li a:hover {
+        color: #8599B6;
+        background-color:#274068; 
+        cursor: pointer;
+    }                
+                        
+}
+
+
