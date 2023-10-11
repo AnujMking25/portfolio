@@ -24,12 +24,12 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navList}>
-      <div className={isOpen ? styles.showMenu : ""}>
+      <div className={isOpen ? styles.showMenu : null}>
         <div className={styles.hamburger} onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </div>
 
-        <div className={isOpen ? styles.showMenu : styles.regularNavbar}>
+        <ul className={isOpen ? styles.showMenu : styles.regularNavbar}>
           <li>
             <Link
               to="header"
@@ -85,7 +85,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faEnvelope} /> Contact
             </Link>
           </li>
-        </div>
+        </ul>
       </div>
     </nav>
   );

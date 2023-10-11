@@ -28,6 +28,12 @@ const Projects = () => {
       demoLink: "https://mail-box-f564c.web.app/",
       githubLink: "https://github.com/AnujMking25/mailboxclient.git",
     },
+    {
+      name: "My Portfolio",
+      image: "/ProjectImages/portfolio.jpg",
+      demoLink: "/",
+      githubLink: "/",
+    }
   ];
 
   return (

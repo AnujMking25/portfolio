@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header id="header" className={styles.headerClass}>
+    <header className={styles.header}>
       <div className={styles.lineContainer}>
         <div className={styles.text1}>
           Hi!<span className={styles.handIcon}>👋</span>I am Anuj Mishra.
