@@ -193,7 +193,7 @@ const Contact = () => {
               onChange={changeHandler}
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className={styles.textdiv} >
             <textarea
               placeholder="Type your message here"
               name="message"
